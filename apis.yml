@@ -1,7 +1,25 @@
 aid: goaudience
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/goaudience.png
 name: GoAudience
-description: GoAudience is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GoAudience is a customer-intelligence platform for Shopify ecommerce brands that turns first-party
+  customer data into marketing decisions. It builds stable customer personas from real store data,
+  surfaces findings and recommended actions ranked by impact, and syncs directly into Klaviyo, Meta,
+  TikTok and other marketing tools. Features include a natural-language command surface for asking
+  grounded questions about customers, a weekly "Monday Brief" digest of at-risk, lapsed and recovered
+  customers with revenue impact, and a 90-day email audit. GoAudience is a Techstars-backed company;
+  this profile was added to the API Evangelist network as an enrichment lead.
 url: https://raw.githubusercontent.com/api-evangelist/goaudience/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Customer Intelligence
+- Ecommerce
+- Shopify
+- Marketing
+- Customer Data Platform
+- Personas
+- Decision Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/goaudience-domain-security.yml
 - type: Website
   url: https://goaudience.com/
+- type: Pricing
+  url: https://goaudience.com/pricing
+- type: SignUp
+  url: https://business.goaudience.com/login
+- type: TermsOfService
+  url: https://goaudience.com/legal/terms-conditions
+- type: Support
+  url: https://goaudience.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
