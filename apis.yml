@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-13'
 tags:
 - Company
 - Customer Intelligence
@@ -56,10 +56,41 @@ common:
   url: https://business.goaudience.com/login
 - type: TermsOfService
   url: https://goaudience.com/legal/terms-conditions
+- type: PrivacyPolicy
+  url: https://goaudience.com/privacy
 - type: Support
   url: https://goaudience.com/contact
+- type: Plans
+  url: plans/goaudience-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/goaudience-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Full contract-discovery pass run against every GoAudience host. No public developer
+    API, spec, SDK, MCP server, agent card or .well-known document exists. Pricing,
+    packages, well-known probe and a generated llms.txt were written.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    GoAudience sells a Shopify merchant app and runs no developer program — goaudience.com
+    returns a hard 404 on /docs, /api, /developers and /blog, the GoAudience GitHub
+    organization has zero public repositories, and the merchant console at
+    business.goaudience.com is a create-react-app SPA whose catch-all answers 200 with the
+    same HTML shell for every path including ones that do not exist.
+  evidence:
+  - url: https://goaudience.com/developers
+    status: 404
+  - url: https://goaudience.com/docs
+    status: 404
+  - url: https://goaudience.com/api
+    status: 404
+  - url: https://api.github.com/orgs/GoAudience/repos
+    status: 200
+  - url: https://business.goaudience.com/.well-known/agent-card.json
+    status: 200
+  checked: '2026-08-13'
