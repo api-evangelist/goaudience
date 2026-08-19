@@ -1,0 +1,93 @@
+generated: '2026-08-13'
+method: searched
+source: https://goaudience.com/pricing
+note: >-
+  GoAudience prices a Shopify merchant application, not an API. Tiers are sold by the
+  merchant's annual revenue band and metered in "conversations" (natural-language queries
+  against the persona/decision surface) — there is no per-call, per-endpoint or per-seat
+  API pricing, and no plan on the published pricing page grants API access. Prices below
+  are the monthly-equivalent figures shown on the annual billing toggle.
+currency: USD
+billing_periods:
+- monthly
+- annual
+plan_count: 5
+plans:
+- name: Free
+  price: 0
+  currency: USD
+  period: month
+  quota: Sample persona only
+  note: >-
+    Perpetual free tier, no time limit. Live segments, a persona chat sample, weekly
+    briefs, a monthly brand audit and a quarterly email audit. Does not include full
+    access to the merchant's own customer base.
+  api_access: false
+- name: Starter
+  price: 129
+  currency: USD
+  period: month
+  annual_price: 1548
+  annual_note: two months free on annual billing
+  audience: Shopify brands under $5M annual revenue
+  quota: ~1,500 conversations per month
+  overage: No metered overage — sustained excess requires a plan upgrade
+  support: In-app chat
+  integrations:
+  - Shopify
+  - Klaviyo
+  - Meta Ads
+  - TikTok Ads
+  - demographic enrichment
+  api_access: false
+- name: Boost
+  price: 419
+  currency: USD
+  period: month
+  annual_price: 5028
+  annual_note: two months free on annual billing
+  audience: Shopify brands $5M to $15M annual revenue
+  quota: ~4,000 conversations per month
+  overage: No metered overage — sustained excess requires a plan upgrade
+  support: Dedicated Slack channel
+  integrations:
+  - Shopify
+  - Klaviyo
+  - Meta Ads
+  - TikTok Ads
+  - demographic enrichment
+  api_access: false
+- name: Plus
+  price: 1099
+  currency: USD
+  period: month
+  annual_price: 13188
+  annual_note: two months free on annual billing
+  audience: Shopify brands $15M to $60M annual revenue
+  quota: Unlimited conversations, subject to fair use
+  overage: >-
+    Sustained automated or extreme volume may require moving to a higher plan
+  support: Dedicated customer success manager
+  features:
+  - cross-brand intelligence
+  api_access: false
+- name: Enterprise
+  price: null
+  currency: USD
+  period: null
+  pricing_model: contact-sales
+  audience: Shopify brands $60M+ annual revenue
+  quota: Unlimited conversations, subject to fair use
+  support: Dedicated customer success manager
+  features:
+  - cross-brand intelligence
+  - custom integrations
+  - data export of personas, underlying customer cohorts and generated audience data
+  api_access: null
+  api_access_note: >-
+    The pricing page offers "custom integrations" at this tier but does not state that a
+    public API is included. Recorded as unknown rather than assumed.
+x-evidence:
+  fetched: '2026-08-13'
+  url: https://goaudience.com/pricing
+  http_status: 200
