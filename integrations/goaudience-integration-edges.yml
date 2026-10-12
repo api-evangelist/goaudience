@@ -1,0 +1,26 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/goaudience/integrations
+checked:
+- https://composio.dev/toolkits/goaudience
+- https://monid.ai/tools/goaudience
+- https://n8n.io/integrations/goaudience/
+- https://zapier.com/apps/goaudience/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: goaudience
+  url: https://zapier.com/apps/goaudience/integrations
+  external_url: https://www.goaudience.com/
+  partner_tier: BRONZE
+  triggers:
+  - key: new_lead
+    label: New Lead
+  actions:
+  - key: export_emails
+    label: Export Emails
+  searches: []
+edges: []
+templates: []
